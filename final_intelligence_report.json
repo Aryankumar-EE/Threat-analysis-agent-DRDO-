@@ -1,0 +1,194 @@
+{
+    "incident": {
+        "doc_id": "IR030",
+        "source_type": "real-inspired",
+        "title": "Cyber espionage activity detected",
+        "location": "India",
+        "timestamp": "2026-06-08",
+        "content": "Foreign IPs attempting to access sensitive systems."
+    },
+    "entities": {
+        "doc_id": "IR030",
+        "primary_threat_actor": "Foreign IPs",
+        "attack_vector": "Network Access",
+        "target_sector": "Sensitive Systems",
+        "compromised_assets": [
+            "Sensitive Systems"
+        ],
+        "actionable_indicator": true
+    },
+    "evidence": [
+        {
+            "doc_id": "NW008",
+            "title": "Smart city infrastructure under cyber attack",
+            "source_type": "unknown",
+            "location": "Delhi",
+            "timestamp": "2026-06-03",
+            "chunk_id": "NW008_0",
+            "text": "Traffic and surveillance systems experienced unauthorized access attempts."
+        },
+        {
+            "doc_id": "IR034",
+            "title": "Smart city system hacked attempt",
+            "source_type": "real-inspired",
+            "location": "Delhi",
+            "timestamp": "2026-06-09",
+            "chunk_id": "IR034_0",
+            "text": "Traffic system faced unauthorized access attempts."
+        },
+        {
+            "doc_id": "IR031",
+            "title": "Suspicious USB device usage detected",
+            "source_type": "synthetic",
+            "location": "Corporate Office",
+            "timestamp": "2026-06-09",
+            "chunk_id": "IR031_0",
+            "text": "External device connected to restricted system."
+        },
+        {
+            "doc_id": "IR030",
+            "title": "Cyber espionage activity detected",
+            "source_type": "real-inspired",
+            "location": "India",
+            "timestamp": "2026-06-08",
+            "chunk_id": "IR030_0",
+            "text": "Foreign IPs attempting to access sensitive systems."
+        },
+        {
+            "doc_id": "IR010",
+            "title": "Firewall blocked intrusion attempt",
+            "source_type": "synthetic",
+            "location": "Noida Data Center",
+            "timestamp": "2026-06-04",
+            "chunk_id": "IR010_0",
+            "text": "Unauthorized access attempt successfully blocked."
+        }
+    ],
+    "verified_claims": {
+        "threat_actor_verified": "Foreign IPs",
+        "attack_vector_verified": "Network Access",
+        "target_sector_verified": "Sensitive Systems"
+    },
+    "confidence_score": 0.8,
+    "threat_score": 7.0,
+    "recommendations": {
+        "immediate_actions": [
+            {
+                "action": "Block foreign IPs attempting to access sensitive systems",
+                "urgency": "High",
+                "responsible": "Network Security Team"
+            },
+            {
+                "action": "Conduct a thorough investigation of the incident",
+                "urgency": "High",
+                "responsible": "Cyber Incident Response Team"
+            },
+            {
+                "action": "Implement additional security measures to protect sensitive systems",
+                "urgency": "High",
+                "responsible": "IT Security Team"
+            }
+        ],
+        "monitoring_tasks": [
+            {
+                "task": "Monitor network traffic for suspicious activity",
+                "urgency": "Medium",
+                "responsible": "Network Security Team"
+            },
+            {
+                "task": "Monitor system logs for signs of unauthorized access",
+                "urgency": "Medium",
+                "responsible": "IT Security Team"
+            },
+            {
+                "task": "Conduct regular vulnerability assessments to identify potential weaknesses",
+                "urgency": "Low",
+                "responsible": "IT Security Team"
+            }
+        ],
+        "escalation": {
+            "should_escalate": true,
+            "escalate_to": "Senior Management",
+            "urgency": "High",
+            "reason": "Potential compromise of sensitive systems and data"
+        },
+        "risk_mitigation": [
+            {
+                "mitigation": "Implement a web application firewall to protect against SQL injection attacks",
+                "urgency": "High",
+                "responsible": "IT Security Team"
+            },
+            {
+                "mitigation": "Conduct regular security awareness training for employees",
+                "urgency": "Medium",
+                "responsible": "HR Department"
+            },
+            {
+                "mitigation": "Implement a incident response plan to ensure timely and effective response to future incidents",
+                "urgency": "Low",
+                "responsible": "Cyber Incident Response Team"
+            }
+        ]
+    },
+    "severity_level": "High",
+    "threat_report": {
+        "threat_score": 7.0,
+        "severity_level": "High",
+        "summary": "Cyber espionage activity detected, with foreign IPs attempting to access sensitive systems in India.",
+        "key_entities": [
+            {
+                "name": "Foreign IPs",
+                "type": "Primary Threat Actor"
+            },
+            {
+                "name": "Network Access",
+                "type": "Attack Vector"
+            },
+            {
+                "name": "Sensitive Systems",
+                "type": "Target Sector"
+            }
+        ],
+        "threat_indicators": [
+            {
+                "indicator": "Foreign IPs attempting to access sensitive systems",
+                "type": "Network Access"
+            }
+        ],
+        "evidence": [
+            {
+                "doc_id": "NW008",
+                "title": "Smart city infrastructure under cyber attack",
+                "source_type": "unknown",
+                "location": "Delhi",
+                "timestamp": "2026-06-03",
+                "text": "Traffic and surveillance systems experienced unauthorized access attempts."
+            },
+            {
+                "doc_id": "IR034",
+                "title": "Smart city system hacked attempt",
+                "source_type": "real-inspired",
+                "location": "Delhi",
+                "timestamp": "2026-06-09",
+                "text": "Traffic system faced unauthorized access attempts."
+            },
+            {
+                "doc_id": "IR031",
+                "title": "Suspicious USB device usage detected",
+                "source_type": "synthetic",
+                "location": "Corporate Office",
+                "timestamp": "2026-06-09",
+                "text": "External device connected to restricted system."
+            },
+            {
+                "doc_id": "IR010",
+                "title": "Firewall blocked intrusion attempt",
+                "source_type": "synthetic",
+                "location": "Noida Data Center",
+                "timestamp": "2026-06-04",
+                "text": "Unauthorized access attempt successfully blocked."
+            }
+        ]
+    },
+    "report": "\nTHREAT ASSESSMENT REPORT\n\nThreat Score:\n7.0/10\n\nSeverity:\nHigh\n\nSummary:\nCyber espionage activity detected, with foreign IPs attempting to access sensitive systems in India.\n"
+}

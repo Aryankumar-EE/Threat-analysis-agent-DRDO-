@@ -1,0 +1,520 @@
+[
+    {
+        "doc_id": "IR001",
+        "primary_threat_actor": "Fraudsters",
+        "attack_vector": "Social Engineering",
+        "target_sector": "Financial Services",
+        "compromised_assets": [
+            "OTPs",
+            "netbanking credentials"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR002",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Brute Force",
+        "target_sector": "Government",
+        "compromised_assets": [
+            "Core Administration Portal"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR003",
+        "primary_threat_actor": "Scammers",
+        "attack_vector": "Social Engineering",
+        "target_sector": "E-commerce",
+        "compromised_assets": [
+            "Google Pay account"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR004",
+        "primary_threat_actor": "Unclassified foreign entity",
+        "attack_vector": "Data exfiltration",
+        "target_sector": "Corporate",
+        "compromised_assets": [
+            "Corporate network"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR005",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Physical",
+        "target_sector": "Financial",
+        "compromised_assets": [
+            "ATM"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR006",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Misconfiguration",
+        "target_sector": "Finance",
+        "compromised_assets": [
+            "AWS S3 bucket",
+            "Sensitive customer KYC documents"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR007",
+        "primary_threat_actor": "BlackCat ransomware gang",
+        "attack_vector": "Ransomware",
+        "target_sector": "Healthcare",
+        "compromised_assets": [
+            "Core patient database"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR008",
+        "primary_threat_actor": "Unidentified male",
+        "attack_vector": "Physical",
+        "target_sector": "Telecommunications",
+        "compromised_assets": [
+            "Restricted signaling switch room"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR009",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Phishing",
+        "target_sector": "Financial Services",
+        "compromised_assets": [
+            "ICICI netbanking login credentials",
+            "PINs"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR010",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "SQL injection and malicious payload delivery",
+        "target_sector": "Public Web Application",
+        "compromised_assets": [],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR011",
+        "primary_threat_actor": "External cybercriminals",
+        "attack_vector": "Insider threat",
+        "target_sector": "Banking and Finance",
+        "compromised_assets": [
+            "Operational transaction tokens"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR012",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Physical",
+        "target_sector": "Transportation",
+        "compromised_assets": [
+            "CCTV"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR013",
+        "primary_threat_actor": "Hacker group",
+        "attack_vector": "Data breach",
+        "target_sector": "E-commerce",
+        "compromised_assets": [
+            "hashed passwords",
+            "addresses",
+            "phone numbers"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR014",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Malware",
+        "target_sector": "Enterprise",
+        "compromised_assets": [
+            "Windows system",
+            "Employee's downloads directory"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR015",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Phishing",
+        "target_sector": "Financial Services",
+        "compromised_assets": [
+            "Online Banking Accounts"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR016",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Physical",
+        "target_sector": "Government",
+        "compromised_assets": [
+            "Air-gapped system"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR017",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Social Engineering",
+        "target_sector": "IT/Software",
+        "compromised_assets": [
+            "Personal Data",
+            "Financial Information"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR018",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "API Scanning",
+        "target_sector": "Inventory Management",
+        "compromised_assets": [
+            "Cloud Server Mumbai"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR019",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Physical Tampering",
+        "target_sector": "Retail",
+        "compromised_assets": [
+            "Customer Payments",
+            "Merchant Reputation"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR020",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Physical",
+        "target_sector": "Public Safety",
+        "compromised_assets": [
+            "Crowd"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR021",
+        "primary_threat_actor": null,
+        "attack_vector": "Network Scan",
+        "target_sector": "Enterprise",
+        "compromised_assets": [],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR022",
+        "primary_threat_actor": "LockBit",
+        "attack_vector": "Ransomware",
+        "target_sector": "Education",
+        "compromised_assets": [
+            "Admission portal",
+            "Fee portal"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR023",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Phishing/Password Cracking",
+        "target_sector": "Corporate",
+        "compromised_assets": [
+            "Executive's corporate mail account"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR024",
+        "primary_threat_actor": "Unknown (exploit payloads)",
+        "attack_vector": "Network exploitation",
+        "target_sector": "Financial",
+        "compromised_assets": [
+            "Swift gateway integration layer"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR025",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Email Phishing",
+        "target_sector": "Corporate",
+        "compromised_assets": [
+            "Internal Emails",
+            "External Macro-enabled Excel Sheet"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR026",
+        "primary_threat_actor": "Mirai-variant botnet",
+        "attack_vector": "DDoS",
+        "target_sector": "Global",
+        "compromised_assets": [
+            "Smart CCTV cameras",
+            "Home routers"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR027",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Physical",
+        "target_sector": "Financial",
+        "compromised_assets": [
+            "Debit Account",
+            "ATMs"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR028",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Unprotected Elasticsearch server",
+        "target_sector": "Healthcare",
+        "compromised_assets": [
+            "Diagnostic laboratory records",
+            "Patient names",
+            "Blood samples",
+            "HIV test reports",
+            "Cancer test reports"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR029",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Phishing/Unsecured Network",
+        "target_sector": "Cloud",
+        "compromised_assets": [
+            "Cloud Root Console"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR030",
+        "primary_threat_actor": "APT41",
+        "attack_vector": "spear-phishing",
+        "target_sector": "defense public sector undertaking",
+        "compromised_assets": [
+            "backdoors"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR031",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "USB device",
+        "target_sector": "Corporate Office",
+        "compromised_assets": [
+            "Terminal"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR032",
+        "primary_threat_actor": "Deepfake AI",
+        "attack_vector": "Social Engineering",
+        "target_sector": "Finance",
+        "compromised_assets": [
+            "INR 12 Lakhs"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR033",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Malware",
+        "target_sector": "Endpoint Device",
+        "compromised_assets": [
+            "Network Switch",
+            "Workstation"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR034",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Unauthorized firmware update",
+        "target_sector": "Smart City Infrastructure",
+        "compromised_assets": [
+            "SCADA street lighting consoles"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR035",
+        "primary_threat_actor": "Internal Actor",
+        "attack_vector": "Insider Threat",
+        "target_sector": "Finance",
+        "compromised_assets": [
+            "Core Payroll Tables"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR036",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Misconfigured API Gateway",
+        "target_sector": "E-commerce",
+        "compromised_assets": [
+            "Session authentication cookies",
+            "Active user data"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR037",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Password Cracking",
+        "target_sector": "Banking",
+        "compromised_assets": [
+            "12 core corporate accounts"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR038",
+        "primary_threat_actor": "Cybercrime gang",
+        "attack_vector": "Social Engineering",
+        "target_sector": "Financial Services",
+        "compromised_assets": [
+            "Personal Financial Information",
+            "Identity Theft"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR039",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Malware/Software Exploit",
+        "target_sector": "Smart City Infrastructure",
+        "compromised_assets": [
+            "Smart Environmental Sensor Telemetry Nodes"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR040",
+        "primary_threat_actor": null,
+        "attack_vector": null,
+        "target_sector": "Energy/Power Grid",
+        "compromised_assets": [],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR041",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Session Hijacking",
+        "target_sector": "Corporate Administration",
+        "compromised_assets": [
+            "Active Corporate Administration JWT Token"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR042",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Ransomware",
+        "target_sector": "Manufacturing",
+        "compromised_assets": [
+            "Industrial PLC operational controllers"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR043",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Phishing/Unauthorized Access",
+        "target_sector": "Cloud Security",
+        "compromised_assets": [
+            "IAM admin user"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR044",
+        "primary_threat_actor": null,
+        "attack_vector": "Web Application",
+        "target_sector": "Banking",
+        "compromised_assets": [
+            "APIs"
+        ],
+        "actionable_indicator": false
+    },
+    {
+        "doc_id": "IR045",
+        "primary_threat_actor": "Unknown (infostealer variant)",
+        "attack_vector": "Email",
+        "target_sector": "Corporate",
+        "compromised_assets": [
+            "Email Gateway",
+            "Sandbox"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR046",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Drive-by download via third-party web portals",
+        "target_sector": "Financial Services",
+        "compromised_assets": [
+            "Contacts lists",
+            "Gallery items"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR047",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Brute-force",
+        "target_sector": "Development",
+        "compromised_assets": [
+            "Staging server",
+            "SSH endpoint"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR048",
+        "primary_threat_actor": "Scammers",
+        "attack_vector": "Identity Theft",
+        "target_sector": "Financial Services",
+        "compromised_assets": [
+            "Business Current Bank Account",
+            "PAN",
+            "Aadhaar"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR049",
+        "primary_threat_actor": "Unauthorized IP segment",
+        "attack_vector": "Data Exfiltration",
+        "target_sector": "Cloud Server",
+        "compromised_assets": [
+            "Database"
+        ],
+        "actionable_indicator": true
+    },
+    {
+        "doc_id": "IR050",
+        "primary_threat_actor": "Unknown",
+        "attack_vector": "Exploitation of high-severity vulnerabilities",
+        "target_sector": "Telecom",
+        "compromised_assets": [
+            "Linux distributions used across national telecom nodes"
+        ],
+        "actionable_indicator": true
+    }
+]

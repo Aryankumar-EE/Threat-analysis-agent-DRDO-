@@ -1,0 +1,673 @@
+[
+  {
+    "doc_id": "IR001",
+    "source_type": "real-inspired",
+    "title": "Delhi cyber fraud racket using fake bank calls",
+    "location": "Delhi",
+    "timestamp": "2026-06-01",
+    "content": "Fraudsters impersonated bank officials to steal OTPs and credentials."
+  },
+  {
+    "doc_id": "IR002",
+    "source_type": "synthetic",
+    "title": "Brute force attack on government server",
+    "location": "Noida",
+    "timestamp": "2026-06-01",
+    "content": "Multiple failed login attempts detected from foreign IPs."
+  },
+  {
+    "doc_id": "IR003",
+    "source_type": "real-inspired",
+    "title": "UPI fraud via fake customer support",
+    "location": "Mumbai",
+    "timestamp": "2026-06-02",
+    "content": "Victim lost money after sharing OTP with scammers."
+  },
+  {
+    "doc_id": "IR004",
+    "source_type": "synthetic",
+    "title": "Data exfiltration detected in corporate network",
+    "location": "Bangalore",
+    "timestamp": "2026-06-02",
+    "content": "Large outbound data transfer to unknown server detected."
+  },
+  {
+    "doc_id": "IR005",
+    "source_type": "real-inspired",
+    "title": "ATM skimming device found in Delhi NCR",
+    "location": "Delhi",
+    "timestamp": "2026-06-02",
+    "content": "Police recovered device used to clone debit cards."
+  },
+
+  {
+    "doc_id": "IR006",
+    "source_type": "synthetic",
+    "title": "Cloud storage misconfiguration exposure",
+    "location": "Hyderabad",
+    "timestamp": "2026-06-03",
+    "content": "Sensitive files exposed due to public bucket settings."
+  },
+  {
+    "doc_id": "IR007",
+    "source_type": "real-inspired",
+    "title": "Hospital ransomware attack disrupts services",
+    "location": "Delhi",
+    "timestamp": "2026-06-03",
+    "content": "Patient records encrypted causing treatment delays."
+  },
+  {
+    "doc_id": "IR008",
+    "source_type": "synthetic",
+    "title": "Suspicious loitering detected by CCTV",
+    "location": "Rajiv Chowk",
+    "timestamp": "2026-06-03",
+    "content": "Person observed repeatedly entering restricted zone."
+  },
+  {
+    "doc_id": "IR009",
+    "source_type": "real-inspired",
+    "title": "Phishing attack via fake banking websites",
+    "location": "India",
+    "timestamp": "2026-06-04",
+    "content": "Users redirected to fake login pages to steal credentials."
+  },
+  {
+    "doc_id": "IR010",
+    "source_type": "synthetic",
+    "title": "Firewall blocked intrusion attempt",
+    "location": "Noida Data Center",
+    "timestamp": "2026-06-04",
+    "content": "Unauthorized access attempt successfully blocked."
+  },
+
+  {
+    "doc_id": "IR011",
+    "source_type": "real-inspired",
+    "title": "Insider cyber fraud case in bank",
+    "location": "Chandigarh",
+    "timestamp": "2026-06-04",
+    "content": "Bank employee assisted hackers in unauthorized transfers."
+  },
+  {
+    "doc_id": "IR012",
+    "source_type": "synthetic",
+    "title": "CCTV anomaly detected at metro station",
+    "location": "Delhi Metro",
+    "timestamp": "2026-06-05",
+    "content": "Repeated loitering in restricted area observed."
+  },
+  {
+    "doc_id": "IR013",
+    "source_type": "real-inspired",
+    "title": "Customer data breach in e-commerce platform",
+    "location": "India",
+    "timestamp": "2026-06-05",
+    "content": "User data leaked from compromised database."
+  },
+  {
+    "doc_id": "IR014",
+    "source_type": "synthetic",
+    "title": "Malware detected in enterprise system",
+    "location": "Bangalore",
+    "timestamp": "2026-06-05",
+    "content": "Suspicious file quarantined by antivirus system."
+  },
+  {
+    "doc_id": "IR015",
+    "source_type": "real-inspired",
+    "title": "Online banking fraud using phishing links",
+    "location": "Delhi",
+    "timestamp": "2026-06-05",
+    "content": "Victims tricked into entering credentials on fake sites."
+  },
+
+  {
+    "doc_id": "IR016",
+    "source_type": "synthetic",
+    "title": "Unauthorized USB device detected",
+    "location": "Government Office",
+    "timestamp": "2026-06-05",
+    "content": "External storage device connected to secure system."
+  },
+  {
+    "doc_id": "IR017",
+    "source_type": "real-inspired",
+    "title": "Fake job recruitment cyber scam",
+    "location": "India",
+    "timestamp": "2026-06-06",
+    "content": "Fraudsters collected personal data via fake job offers."
+  },
+  {
+    "doc_id": "IR018",
+    "source_type": "synthetic",
+    "title": "High API request anomaly detected",
+    "location": "Cloud Server Mumbai",
+    "timestamp": "2026-06-06",
+    "content": "Abnormal traffic spike from single IP observed."
+  },
+  {
+    "doc_id": "IR019",
+    "source_type": "real-inspired",
+    "title": "QR code payment scam reported",
+    "location": "Mumbai",
+    "timestamp": "2026-06-06",
+    "content": "Fake QR codes redirected users to fraudulent payment portals."
+  },
+  {
+    "doc_id": "IR020",
+    "source_type": "synthetic",
+    "title": "Suspicious crowd detected in public area",
+    "location": "Connaught Place",
+    "timestamp": "2026-06-06",
+    "content": "Unexpected crowd formation without scheduled event."
+  },
+
+  {
+    "doc_id": "IR021",
+    "source_type": "synthetic",
+    "title": "Network scan detected on enterprise firewall",
+    "location": "Gurgaon",
+    "timestamp": "2026-06-07",
+    "content": "Port scanning activity blocked by firewall."
+  },
+  {
+    "doc_id": "IR022",
+    "source_type": "real-inspired",
+    "title": "Ransomware attack on educational institute",
+    "location": "Delhi",
+    "timestamp": "2026-06-07",
+    "content": "University systems encrypted by ransomware group."
+  },
+  {
+    "doc_id": "IR023",
+    "source_type": "synthetic",
+    "title": "Suspicious login from multiple countries",
+    "location": "Hyderabad",
+    "timestamp": "2026-06-07",
+    "content": "Account accessed from multiple geographic locations."
+  },
+  {
+    "doc_id": "IR024",
+    "source_type": "real-inspired",
+    "title": "Bank server intrusion attempt detected",
+    "location": "India",
+    "timestamp": "2026-06-07",
+    "content": "Intrusion attempt blocked by IDS system."
+  },
+  {
+    "doc_id": "IR025",
+    "source_type": "synthetic",
+    "title": "Suspicious email phishing campaign detected",
+    "location": "Bangalore",
+    "timestamp": "2026-06-07",
+    "content": "Employees received fake login credential emails."
+  },
+
+  {
+    "doc_id": "IR026",
+    "source_type": "real-inspired",
+    "title": "IoT devices used in botnet attack",
+    "location": "Global",
+    "timestamp": "2026-06-08",
+    "content": "Compromised IoT devices used for DDoS attacks."
+  },
+  {
+    "doc_id": "IR027",
+    "source_type": "synthetic",
+    "title": "ATM transaction anomaly detected",
+    "location": "Delhi",
+    "timestamp": "2026-06-08",
+    "content": "Multiple small withdrawals from same account."
+  },
+  {
+    "doc_id": "IR028",
+    "source_type": "real-inspired",
+    "title": "Healthcare data breach reported",
+    "location": "India",
+    "timestamp": "2026-06-08",
+    "content": "Medical records accessed without authorization."
+  },
+  {
+    "doc_id": "IR029",
+    "source_type": "synthetic",
+    "title": "Unauthorized access blocked in cloud system",
+    "location": "Mumbai",
+    "timestamp": "2026-06-08",
+    "content": "Security system blocked external intrusion attempt."
+  },
+  {
+    "doc_id": "IR030",
+    "source_type": "real-inspired",
+    "title": "Cyber espionage activity detected",
+    "location": "India",
+    "timestamp": "2026-06-08",
+    "content": "Foreign IPs attempting to access sensitive systems."
+  },
+
+  {
+    "doc_id": "IR031",
+    "source_type": "synthetic",
+    "title": "Suspicious USB device usage detected",
+    "location": "Corporate Office",
+    "timestamp": "2026-06-09",
+    "content": "External device connected to restricted system."
+  },
+  {
+    "doc_id": "IR032",
+    "source_type": "real-inspired",
+    "title": "Deepfake scam used in financial fraud",
+    "location": "India",
+    "timestamp": "2026-06-09",
+    "content": "Fake voice used to impersonate executives."
+  },
+  {
+    "doc_id": "IR033",
+    "source_type": "synthetic",
+    "title": "Malware infection detected in endpoint device",
+    "location": "Noida",
+    "timestamp": "2026-06-09",
+    "content": "Device isolated after malware detection."
+  },
+  {
+    "doc_id": "IR034",
+    "source_type": "real-inspired",
+    "title": "Smart city system hacked attempt",
+    "location": "Delhi",
+    "timestamp": "2026-06-09",
+    "content": "Traffic system faced unauthorized access attempts."
+  },
+  {
+    "doc_id": "IR035",
+    "source_type": "synthetic",
+    "title": "Suspicious database query patterns detected",
+    "location": "Gurgaon",
+    "timestamp": "2026-06-09",
+    "content": "Abnormal query behavior detected in database logs."
+  },
+
+  {
+    "doc_id": "IR036",
+    "source_type": "real-inspired",
+    "title": "E-commerce platform data leak",
+    "location": "India",
+    "timestamp": "2026-06-10",
+    "content": "Customer data exposed due to security breach."
+  },
+  {
+    "doc_id": "IR037",
+    "source_type": "synthetic",
+    "title": "Repeated failed login attempts detected",
+    "location": "Bank Server",
+    "timestamp": "2026-06-10",
+    "content": "Brute force attack blocked successfully."
+  },
+  {
+    "doc_id": "IR038",
+    "source_type": "real-inspired",
+    "title": "Cybercrime gang arrested for online fraud",
+    "location": "Delhi",
+    "timestamp": "2026-06-10",
+    "content": "Gang used fake websites to steal user credentials."
+  },
+  {
+    "doc_id": "IR039",
+    "source_type": "synthetic",
+    "title": "Anomalous traffic detected in IoT network",
+    "location": "Smart City Network",
+    "timestamp": "2026-06-10",
+    "content": "Unexpected traffic spike from IoT devices."
+  },
+  {
+    "doc_id": "IR040",
+    "source_type": "real-inspired",
+    "title": "Government cyber defense upgraded",
+    "location": "India",
+    "timestamp": "2026-06-10",
+    "content": "AI-based threat monitoring system deployed."
+  },
+
+  {
+    "doc_id": "IR041",
+    "source_type": "synthetic",
+    "title": "Suspicious login session hijacking attempt",
+    "location": "Mumbai",
+    "timestamp": "2026-06-11",
+    "content": "Session tokens detected being reused illegally."
+  },
+  {
+    "doc_id": "IR042",
+    "source_type": "real-inspired",
+    "title": "Ransomware attack on manufacturing unit",
+    "location": "Pune",
+    "timestamp": "2026-06-11",
+    "content": "Production halted due to encrypted systems."
+  },
+  {
+    "doc_id": "IR043",
+    "source_type": "synthetic",
+    "title": "Suspicious geo-location login detected",
+    "location": "Hyderabad",
+    "timestamp": "2026-06-11",
+    "content": "Login detected from unusual geographic region."
+  },
+  {
+    "doc_id": "IR044",
+    "source_type": "real-inspired",
+    "title": "Banking API breach attempt detected",
+    "location": "India",
+    "timestamp": "2026-06-11",
+    "content": "Unauthorized API access attempt blocked."
+  },
+  {
+    "doc_id": "IR045",
+    "source_type": "synthetic",
+    "title": "Suspicious email attachment blocked",
+    "location": "Corporate Office",
+    "timestamp": "2026-06-11",
+    "content": "Malicious file detected and quarantined."
+  },
+
+  {
+    "doc_id": "IR046",
+    "source_type": "real-inspired",
+    "title": "Cyber fraud using fake loan apps",
+    "location": "India",
+    "timestamp": "2026-06-12",
+    "content": "Fraud apps used to collect user banking data."
+  },
+  {
+    "doc_id": "IR047",
+    "source_type": "synthetic",
+    "title": "Unauthorized cloud access attempt detected",
+    "location": "Bangalore",
+    "timestamp": "2026-06-12",
+    "content": "Security system blocked external intrusion."
+  },
+  {
+    "doc_id": "IR048",
+    "source_type": "real-inspired",
+    "title": "Online identity theft case reported",
+    "location": "Delhi",
+    "timestamp": "2026-06-12",
+    "content": "Victim’s identity used for fraudulent transactions."
+  },
+  {
+    "doc_id": "IR049",
+    "source_type": "synthetic",
+    "title": "Abnormal data transfer detected",
+    "location": "Cloud Server",
+    "timestamp": "2026-06-12",
+    "content": "Large encrypted data transfer flagged as suspicious."
+  },
+  {
+    "doc_id": "IR050",
+    "source_type": "real-inspired",
+    "title": "National cybersecurity alert issued",
+    "location": "India",
+    "timestamp": "2026-06-12",
+    "content": "Authorities issued alert for rising cyber threats across sectors."
+  },
+
+  {
+    "doc_id": "NW001",
+    "title": "Banking systems targeted by coordinated cyberattack",
+    "topic": "Cybersecurity threat",
+    "timestamp": "2026-06-01",
+    "source": "Cyber Security Daily",
+    "content": "Multiple banks reported coordinated login attacks affecting online banking services. Automated bot activity suspected.",
+    "location": "India"
+  },
+  {
+    "doc_id": "NW002",
+    "title": "Ransomware attack disrupts hospital operations",
+    "topic": "Healthcare cybersecurity",
+    "timestamp": "2026-06-01",
+    "source": "Health Tech News",
+    "content": "Hospital systems were encrypted by ransomware, delaying patient treatment and access to medical records.",
+    "location": "Delhi"
+  },
+  {
+    "doc_id": "NW003",
+    "title": "Government portal faces DDoS attack",
+    "topic": "Critical infrastructure",
+    "timestamp": "2026-06-02",
+    "source": "Tech Security Bulletin",
+    "content": "Government websites experienced downtime due to distributed denial-of-service attacks.",
+    "location": "India"
+  },
+  {
+    "doc_id": "NW004",
+    "title": "Suspicious financial transactions detected across banks",
+    "topic": "Financial fraud",
+    "timestamp": "2026-06-02",
+    "source": "Economic Security Times",
+    "content": "Unusual transaction patterns were detected indicating possible coordinated fraud activity.",
+    "location": "Mumbai"
+  },
+  {
+    "doc_id": "NW005",
+    "title": "AI-powered phishing campaigns on the rise",
+    "topic": "Cyber fraud",
+    "timestamp": "2026-06-02",
+    "source": "Cyber Intelligence Report",
+    "content": "Cybercriminals are using AI to generate highly convincing phishing emails targeting employees.",
+    "location": "Global"
+  },
+  {
+    "doc_id": "NW006",
+    "title": "Cloud storage misconfiguration exposes data",
+    "topic": "Data breach",
+    "timestamp": "2026-06-03",
+    "source": "IT Security News",
+    "content": "Sensitive user data was exposed due to incorrect cloud storage configuration.",
+    "location": "Global"
+  },
+  {
+    "doc_id": "NW007",
+    "title": "Insider data leak detected in corporate firm",
+    "topic": "Insider threat",
+    "timestamp": "2026-06-03",
+    "source": "Corporate Security Report",
+    "content": "An employee was found leaking confidential data to external attackers.",
+    "location": "Bangalore"
+  },
+  {
+    "doc_id": "NW008",
+    "title": "Smart city infrastructure under cyber attack",
+    "topic": "IoT security",
+    "timestamp": "2026-06-03",
+    "source": "Urban Tech News",
+    "content": "Traffic and surveillance systems experienced unauthorized access attempts.",
+    "location": "Delhi"
+  },
+  {
+    "doc_id": "NW009",
+    "title": "Massive malware campaign detected in India",
+    "topic": "Malware attack",
+    "timestamp": "2026-06-04",
+    "source": "National Cyber Report",
+    "content": "A large-scale malware campaign affected multiple sectors including banking and education.",
+    "location": "India"
+  },
+  {
+    "doc_id": "NW010",
+    "title": "Cyber fraud cases rise in digital payments",
+    "topic": "Online fraud",
+    "timestamp": "2026-06-04",
+    "source": "FinTech News",
+    "content": "Increase in fraudulent transactions through digital payment platforms reported.",
+    "location": "India"
+  },
+  {
+    "doc_id": "NW011",
+    "title": "Hospital data breach exposes patient records",
+    "topic": "Healthcare breach",
+    "timestamp": "2026-06-04",
+    "source": "Medical Security News",
+    "content": "Patient data including medical history was accessed by unauthorized users.",
+    "location": "Delhi"
+  },
+  {
+    "doc_id": "NW012",
+    "title": "Foreign IP addresses target defense networks",
+    "topic": "National security",
+    "timestamp": "2026-06-05",
+    "source": "Defense Cyber Bulletin",
+    "content": "Defense systems recorded multiple intrusion attempts from overseas IPs.",
+    "location": "India"
+  },
+  {
+    "doc_id": "NW013",
+    "title": "AI used in advanced cyber espionage",
+    "topic": "Cyber espionage",
+    "timestamp": "2026-06-05",
+    "source": "Global Cyber Review",
+    "content": "AI tools are being used to automate cyber espionage activities.",
+    "location": "Global"
+  },
+  {
+    "doc_id": "NW014",
+    "title": "Online banking apps face security vulnerabilities",
+    "topic": "Banking security",
+    "timestamp": "2026-06-05",
+    "source": "FinTech Security Report",
+    "content": "Security flaws in banking apps could allow unauthorized access.",
+    "location": "India"
+  },
+  {
+    "doc_id": "NW015",
+    "title": "Rising ransomware attacks on SMEs",
+    "topic": "Ransomware",
+    "timestamp": "2026-06-05",
+    "source": "SME Cyber News",
+    "content": "Small and medium enterprises are increasingly targeted by ransomware groups.",
+    "location": "India"
+  },
+  {
+    "doc_id": "NW016",
+    "title": "Critical server outage caused by cyberattack",
+    "topic": "Infrastructure attack",
+    "timestamp": "2026-06-06",
+    "source": "Tech Infrastructure News",
+    "content": "Servers went offline due to suspected cyber intrusion.",
+    "location": "Mumbai"
+  },
+  {
+    "doc_id": "NW017",
+    "title": "Deepfake scams used in financial fraud",
+    "topic": "AI fraud",
+    "timestamp": "2026-06-06",
+    "source": "Cyber Fraud Report",
+    "content": "Deepfake audio used to impersonate executives in fraud cases.",
+    "location": "Global"
+  },
+  {
+    "doc_id": "NW018",
+    "title": "Corporate email systems targeted by hackers",
+    "topic": "Email security",
+    "timestamp": "2026-06-06",
+    "source": "Enterprise Security News",
+    "content": "Phishing emails compromised corporate communication systems.",
+    "location": "Bangalore"
+  },
+  {
+    "doc_id": "NW019",
+    "title": "IoT devices exploited in botnet attacks",
+    "topic": "IoT security",
+    "timestamp": "2026-06-06",
+    "source": "IoT Security Bulletin",
+    "content": "Compromised IoT devices used to launch large-scale botnet attacks.",
+    "location": "Global"
+  },
+  {
+    "doc_id": "NW020",
+    "title": "National cyber defense systems upgraded",
+    "topic": "Cyber defense",
+    "timestamp": "2026-06-07",
+    "source": "Government Cyber Update",
+    "content": "New AI-based monitoring systems deployed to detect threats in real time.",
+    "location": "India"
+  },
+
+  {
+    "doc_id": "SL001",
+    "sensor_type": "CCTV",
+    "location": "Metro Station Gate 4",
+    "timestamp": "2026-06-01T09:15:00",
+    "event": "loitering_detected",
+    "details": "Person observed repeatedly entering and exiting restricted area."
+  },
+  {
+    "doc_id": "SL002",
+    "sensor_type": "Network IDS",
+    "location": "Bank Server Room",
+    "timestamp": "2026-06-01T09:20:00",
+    "event": "brute_force_attack",
+    "details": "Multiple failed login attempts detected from single IP."
+  },
+  {
+    "doc_id": "SL003",
+    "sensor_type": "CCTV",
+    "location": "Hospital Entrance",
+    "timestamp": "2026-06-02T10:00:00",
+    "event": "suspicious_bag",
+    "details": "Unattended bag detected near emergency ward."
+  },
+  {
+    "doc_id": "SL004",
+    "sensor_type": "Network Monitor",
+    "location": "Government Data Center",
+    "timestamp": "2026-06-02T10:30:00",
+    "event": "data_exfiltration",
+    "details": "Large outbound data transfer detected to unknown server."
+  },
+  {
+    "doc_id": "SL005",
+    "sensor_type": "CCTV",
+    "location": "City Mall",
+    "timestamp": "2026-06-02T11:00:00",
+    "event": "crowd_anomaly",
+    "details": "Sudden crowd formation without event announcement."
+  },
+  {
+    "doc_id": "SL006",
+    "sensor_type": "Firewall",
+    "location": "Cloud Server",
+    "timestamp": "2026-06-03T11:30:00",
+    "event": "malware_detected",
+    "details": "Suspicious executable blocked by security system."
+  },
+  {
+    "doc_id": "SL007",
+    "sensor_type": "ATM System",
+    "location": "Delhi ATM Network",
+    "timestamp": "2026-06-03T12:00:00",
+    "event": "transaction_anomaly",
+    "details": "Repeated small withdrawals detected from same account."
+  },
+  {
+    "doc_id": "SL008",
+    "sensor_type": "CCTV",
+    "location": "Railway Station",
+    "timestamp": "2026-06-03T12:30:00",
+    "event": "object_abandoned",
+    "details": "Bag left unattended for more than 20 minutes."
+  },
+  {
+    "doc_id": "SL009",
+    "sensor_type": "Network IDS",
+    "location": "Corporate Office",
+    "timestamp": "2026-06-04T13:00:00",
+    "event": "api_abuse",
+    "details": "High frequency API calls detected from single user session."
+  },
+  {
+    "doc_id": "SL010",
+    "sensor_type": "CCTV",
+    "location": "Metro Exit Gate",
+    "timestamp": "2026-06-04T13:30:00",
+    "event": "suspicious_following",
+    "details": "Individual observed following multiple passengers closely."
+  }
+]
