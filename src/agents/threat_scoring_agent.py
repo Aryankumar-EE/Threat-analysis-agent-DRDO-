@@ -38,7 +38,7 @@ threat_prompt = ChatPromptTemplate.from_messages([
     (
         "system",
         """
-You are a Senior Cyber Threat Assessment Agent.
+You are a Senior Defence and Public Safety Threat Assessment Agent.
 
 You MUST return ONLY a valid JSON object.
 

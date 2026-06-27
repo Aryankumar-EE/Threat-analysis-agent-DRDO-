@@ -55,9 +55,27 @@ chunked_documents = []
 
 for doc in documents:
 
-    title = doc.get("title", doc.get("event", "No Title"))
-    content = doc.get("content", doc.get("details", ""))
-    source_type = doc.get("source_type", doc.get("sensor_type", "unknown"))
+    title = (
+    doc.get("title")
+    or doc.get("event")
+    or doc.get("sensor_type")
+    or doc.get("category")
+    or "Unknown Incident"
+)
+    content = (
+    doc.get("content")
+    or doc.get("details")
+    or doc.get("description")
+    or doc.get("summary")
+    or doc.get("event")
+    or ""
+)
+    source_type = (
+    doc.get("source_type")
+    or doc.get("sensor_type")
+    or doc.get("category")
+    or "Unknown"
+)
 
     chunks = chunk_text(content)
 
@@ -124,10 +142,13 @@ print(f"FAISS index contains {index.ntotal} vectors")
 
 def retrieve(query, top_k=5):
 
+    if not query:
+      query = "security incident"
+
     query_embedding = model.encode(
-        [query],
-        convert_to_numpy=True
-    ).astype(np.float32)
+      [str(query)],
+      convert_to_numpy=True
+      ).astype(np.float32)
 
     distances, indices = index.search(query_embedding, top_k)
 
@@ -187,12 +208,22 @@ def retrieve_evidence(query):
 
 def retrieval_node(state):
 
-    attack_vector = state["entities"]["attack_vector"]
+    entities = state.get("entities", {})
+    incident = state.get("incident", {})
 
-    print("Query Sent To Retrieval:", attack_vector)
-
-    state["evidence"] = retrieve_evidence(
-        attack_vector
+    query = (
+        entities.get("attack_vector")
+        or incident.get("event")
+        or incident.get("title")
+        or incident.get("category")
+        or incident.get("sensor_type")
+        or incident.get("details")
+        or incident.get("description")
+        or "security incident"
     )
+
+    print("Query Sent To Retrieval:", query)
+
+    state["evidence"] = retrieve_evidence(query)
 
     return state

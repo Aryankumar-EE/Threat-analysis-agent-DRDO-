@@ -48,23 +48,43 @@ extraction_chain = extract_prompt | llm_json
 
 def extract_intelligence(incident):
 
+    title = (
+        incident.get("title")
+        or incident.get("event")
+        or incident.get("sensor_type")
+        or "Unknown Incident"
+    )
+
+    content = (
+        incident.get("content")
+        or incident.get("details")
+        or incident.get("description")
+        or incident.get("summary")
+        or ""
+    )
+
+    location = (
+    incident.get("location")
+    or incident.get("city")
+    or incident.get("region")
+    or "Unknown"
+)
+
+    
+
     response = extraction_chain.invoke({
-        "doc_id": incident["doc_id"],
-        "title": incident["title"],
-        "content": incident["content"],
-        "location": incident["location"]
+
+        "doc_id": incident.get(
+            "doc_id",
+            "UNKNOWN"
+        ),
+
+        "title": title,
+
+        "content": content,
+
+        "location": location
+
     })
 
     return json.loads(response.content)
-
-
-incident = {
-    "doc_id": "CI001",
-    "title": "Ransomware Attack",
-    "content": "Multiple servers were encrypted by attackers.",
-    "location": "Delhi"
-}
-
-result = extract_intelligence(incident)
-
-print(result)
