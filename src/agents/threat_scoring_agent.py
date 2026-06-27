@@ -74,7 +74,19 @@ Return JSON only.
     (
         "user",
         """
-Analyze the following threat intelligence:
+Analyze the following incident.
+
+Assign a threat score.
+
+Generate a concise summary.
+
+Identify the threat indicators.
+
+List the important entities.
+
+Use the available evidence while making your decision.
+
+Incident:
 
 {document}
 """
@@ -116,7 +128,9 @@ def analyze_threat(document_text):
     report.setdefault("summary", "")
     report.setdefault("key_entities", [])
     report.setdefault("threat_indicators", [])
-    report.setdefault("evidence", [])
+    report.setdefault("confidence_score", 0.0)
+    report.setdefault("recommended_priority", "")
+    report.setdefault("risk_category", "")
 
     return report
 
