@@ -24,14 +24,14 @@ llm_json = llm.bind(
 # =====================================================
 
 SEVERITY_BANDS = [
-    (0.0, 2.0, "Low"),
-    (2.0, 5.0, "Medium"),
-    (5.0, 8.0, "High"),
-    (8.0, 10.01, "Critical"),
+    (0.0, 2.0,  "Low"),
+    (2.0, 5.0,  "Medium"),
+    (5.0, 8.0,  "High"),
+    (8.0, 10.01,"Critical"),
 ]
 
 # =====================================================
-# THREAT ANALYSIS PROMPT
+# THREAT ANALYSIS PROMPT  (rewritten)
 # =====================================================
 
 threat_prompt = ChatPromptTemplate.from_messages([
@@ -39,54 +39,96 @@ threat_prompt = ChatPromptTemplate.from_messages([
         "system",
         """
 You are a Senior Defence and Public Safety Threat Assessment Agent.
+Return ONLY a valid JSON object — no markdown, no explanation.
 
-You MUST return ONLY a valid JSON object.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCORING SCALE  (threat_score: 0.0 – 10.0)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Output JSON format:
+0.0 – 1.9  │ LOW
+  • Routine, fully lawful activity with no risk indicators.
+  • Examples: speed checks, parking tickets, noise complaints,
+    routine border crossings, administrative database queries,
+    policy research, general public-safety drills.
+  • No weapons, no targets, no threat language, no prior history.
+
+2.0 – 4.9  │ MEDIUM
+  • Minor or ambiguous indicators that warrant monitoring
+    but no immediate action.
+  • Examples: low-level antisocial behaviour with a pattern,
+    minor possession offence, mildly suspicious surveillance of
+    a public building with no confirmed intent, vague online
+    threat with no operational detail, petty theft.
+
+5.0 – 7.9  │ HIGH
+  • Credible threat with specific targets, timing, or methods,
+    OR organised criminal activity posing risk to individuals.
+  • Examples: confirmed gang violence with named targets,
+    credible bomb threat with partial operational detail,
+    smuggling of restricted goods, serious stalking with
+    explicit intent, cyber-attack on critical infrastructure
+    with evidence of capability.
+
+8.0 – 10.0 │ CRITICAL
+  • Imminent or active threat of mass casualties, national
+    security breach, or catastrophic harm.
+  • Examples: active shooter, confirmed CBRN weapon attempt,
+    active terrorist plot with resources and target confirmed,
+    live hostage situation, infrastructure attack in progress.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCORING RULES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Default to LOW (0-1.9) unless there is explicit evidence
+   of harmful intent, capability, or outcome. Do NOT score
+   higher simply because a topic sounds sensitive.
+
+2. Raise the score only when TWO OR MORE of these factors
+   are present and evidenced in the document:
+     a) Specific identifiable target (person, place, system)
+     b) Credible capability or method described
+     c) Stated or strongly implied harmful intent
+     d) Timeline or imminent action signals
+     e) Prior related incidents or escalating pattern
+
+3. If only ONE factor is present → stay in Low or low-Medium.
+
+4. Hypotheticals, simulations, research, or training exercises
+   must be scored ≤ 2.0 unless the document itself contains
+   independent threat indicators.
+
+5. Score precision: use one decimal place (e.g. 3.4, 7.1).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OUTPUT FORMAT (strict)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 {{
-  "threat_score": 0,
+  "threat_score": 0.0,
   "severity_level": "",
+  "scoring_rationale": "",
+  "factors_present": [],
   "summary": "",
   "key_entities": [],
   "threat_indicators": [],
   "evidence": []
 }}
 
-Threat Score Guidelines:
-
-0-2 = Low
-3-5 = Medium
-6-8 = High
-9-10 = Critical
-
-Assess the threat using:
-- Incident details
-- Extracted entities
-- Verified claims
-- Retrieved evidence
-
-Do not return markdown.
-Do not return explanations.
-Return JSON only.
+Field notes:
+- scoring_rationale : 1-2 sentences explaining why that exact
+  score was chosen, referencing which factors above were met.
+- factors_present   : list from [target, capability, intent,
+  timeline, pattern] that are confirmed in the document.
+- threat_indicators : specific phrases/facts from the document
+  that raised (or kept low) the score.
+- evidence          : supporting facts or citations from the text.
 """
     ),
     (
         "user",
         """
-Analyze the following incident.
-
-Assign a threat score.
-
-Generate a concise summary.
-
-Identify the threat indicators.
-
-List the important entities.
-
-Use the available evidence while making your decision.
-
-Incident:
+Analyze the following document and return the JSON assessment:
 
 {document}
 """
@@ -97,40 +139,35 @@ Incident:
 # THREAT ANALYSIS FUNCTION
 # =====================================================
 
-def analyze_threat(document_text):
-
-    response = (
-        threat_prompt
-        | llm_json
-    ).invoke(
-        {
-            "document": document_text
-        }
+def analyze_threat(document_text: str) -> dict:
+    """
+    Analyze a document for threat indicators and return a
+    structured report with a calibrated threat score.
+    """
+    response = (threat_prompt | llm_json).invoke(
+        {"document": document_text}
     )
 
-    report = json.loads(
-        response.content
-    )
+    report = json.loads(response.content)
 
-    score = _clamp_score(
-        report.get("threat_score")
-    )
-
+    # -- Normalise & clamp score -----------------------
+    score = _clamp_score(report.get("threat_score"))
     report["threat_score"] = score
 
-    report["severity_level"] = (
-        _severity_for_score(
-            score,
-            report.get("severity_level")
-        )
-    )
+    # -- Authoritative severity from score bands -------
+    # (model's own label is ignored; bands are the source of truth)
+    report["severity_level"] = _severity_for_score(score)
 
-    report.setdefault("summary", "")
-    report.setdefault("key_entities", [])
-    report.setdefault("threat_indicators", [])
-    report.setdefault("confidence_score", 0.0)
-    report.setdefault("recommended_priority", "")
-    report.setdefault("risk_category", "")
+    # -- Ensure all expected fields exist --------------
+    for field, default in [
+        ("scoring_rationale", ""),
+        ("factors_present",   []),
+        ("summary",           ""),
+        ("key_entities",      []),
+        ("threat_indicators", []),
+        ("evidence",          []),
+    ]:
+        report.setdefault(field, default)
 
     return report
 
@@ -139,31 +176,60 @@ def analyze_threat(document_text):
 # HELPER FUNCTIONS
 # =====================================================
 
-def _clamp_score(value):
-
+def _clamp_score(value) -> float:
+    """Coerce value to a float clamped to [0.0, 10.0]."""
     try:
         score = float(value)
-
     except (TypeError, ValueError):
         score = 0.0
-
-    return round(
-        max(0.0, min(10.0, score)),
-        1
-    )
+    return round(max(0.0, min(10.0, score)), 1)
 
 
-def _severity_for_score(
-    score,
-    model_severity
-):
-
+def _severity_for_score(score: float) -> str:
+    """Map a numeric score to a severity label via SEVERITY_BANDS."""
     for low, high, label in SEVERITY_BANDS:
-
         if low <= score < high:
             return label
+    return "Low"   # fallback (score == 10.0 is caught by last band)
 
-    if isinstance(model_severity, str) and model_severity:
-        return model_severity
 
-    return "Low"
+# =====================================================
+# QUICK SMOKE-TEST  (remove before production)
+# =====================================================
+
+if __name__ == "__main__":
+
+    test_cases = [
+        # Should be LOW
+        ("Routine patrol",
+         "Officer conducted a routine speed check on Highway 9. "
+         "No violations detected. All vehicles cleared."),
+
+        # Should be MEDIUM
+        ("Suspicious loitering",
+         "A man was observed circling the downtown courthouse "
+         "three times over two hours, photographing entrances. "
+         "No weapons visible. No prior record found."),
+
+        # Should be HIGH
+        ("Credible threat with target",
+         "Intercepted message: 'We will hit the central railway "
+         "station on Friday morning. Package is ready and team "
+         "is in place.' Sender identity partially confirmed."),
+
+        # Should be CRITICAL
+        ("Active incident",
+         "Active shooter reported inside Terminal 2, "
+         "International Airport. Multiple casualties confirmed. "
+         "Subject armed with automatic rifle, still at large."),
+    ]
+
+    for label, doc in test_cases:
+        result = analyze_threat(doc)
+        print(
+            f"[{label}]\n"
+            f"  Score    : {result['threat_score']}\n"
+            f"  Severity : {result['severity_level']}\n"
+            f"  Rationale: {result['scoring_rationale']}\n"
+            f"  Factors  : {result['factors_present']}\n"
+        )
