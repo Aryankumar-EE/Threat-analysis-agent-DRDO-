@@ -151,10 +151,11 @@ Recommended Actions:
 
 ## Project Team
 
-Project Leader:
+Project members:
 Aryan Kumar
+Paresha sudha
+Manisha
+kalpana 
 
-Faculty of Technology
-University of Delhi
 
 DRDO Internship Project
