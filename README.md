@@ -155,15 +155,9 @@ Recommended Actions:
 Project Leader:
 Aryan Kumar , Faculty of Technology(UoD)
 Paresha SUdha , Faculty of Technology(UoD)
-Kalpana , IGDTUW
-Manisha , IGDTUW
+Kalpana kumari, IGDTUW
+Manisha kumari, IGDTUW
 =======
-Project members:
-Aryan Kumar
-Paresha sudha
-Manisha
-kalpana 
->>>>>>> 8282a0f386dc7ff74412cd74ef3ff8a5756eb7a7
 
 
 DRDO Internship Project
