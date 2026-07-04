@@ -152,7 +152,10 @@ Recommended Actions:
 ## Project Team
 
 Project Leader:
-Aryan Kumar
+Aryan Kumar , Faculty of Technology(UoD)
+Paresha SUdha , Faculty of Technology(UoD)
+Kalpana , IGDTUW
+Manisha , IGDTUW
 
 Faculty of Technology
 University of Delhi

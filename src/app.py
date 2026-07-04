@@ -57,7 +57,7 @@ unsafe_allow_html=True
 )
 
 st.markdown(
-'<p class="small">Faculty of Technology • University of Delhi</p>',
+'<p class="small">powered by Agentic AI </p>',
 unsafe_allow_html=True
 )
 
@@ -98,4 +98,6 @@ st.divider()
 st.markdown("### 👨‍💻 Developed By")
 
 st.write("Aryan Kumar")
-st.write("Faculty of Technology, University of Delhi")
+st.write("Paresha Sudha")
+st.write("Manisha Kumari")
+st.write("Kalpana Kumari")
