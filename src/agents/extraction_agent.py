@@ -18,7 +18,11 @@ from langchain_core.prompts import ChatPromptTemplate
 
 
 # Groq LLM setup with forced JSON mode
+<<<<<<< HEAD
 llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0, api_key=GROQ_API_KEY)
+=======
+llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0,api_key= GROQ_API_KEY)
+>>>>>>> 8282a0f386dc7ff74412cd74ef3ff8a5756eb7a7
 llm_json = llm.bind(response_format={"type": "json_object"})
 
 print("\n🔄 Stage 1: Running Cyber Intelligence Extraction Agent...")

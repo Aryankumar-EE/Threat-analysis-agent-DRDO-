@@ -151,13 +151,19 @@ Recommended Actions:
 
 ## Project Team
 
+<<<<<<< HEAD
 Project Leader:
 Aryan Kumar , Faculty of Technology(UoD)
 Paresha SUdha , Faculty of Technology(UoD)
 Kalpana , IGDTUW
 Manisha , IGDTUW
+=======
+Project members:
+Aryan Kumar
+Paresha sudha
+Manisha
+kalpana 
+>>>>>>> 8282a0f386dc7ff74412cd74ef3ff8a5756eb7a7
 
-Faculty of Technology
-University of Delhi
 
 DRDO Internship Project

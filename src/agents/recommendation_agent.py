@@ -1,6 +1,6 @@
 import json
 from dotenv import load_dotenv
-
+import os
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 import os
@@ -10,8 +10,12 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
+<<<<<<< HEAD
     temperature=0,
     api_key=GROQ_API_KEY
+=======
+    temperature=0,api_key= GROQ_API_KEY
+>>>>>>> 8282a0f386dc7ff74412cd74ef3ff8a5756eb7a7
 )
 
 llm_json = llm.bind(
